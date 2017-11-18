@@ -1,23 +1,64 @@
-* {box-sizing: border-box;}
+/*-----------------INDEX---------------------*/
+  /* 1.0 COLOR SCHEME */
+    /* 1.1 #FFF - Color */
+    /* 1.2 #FFF - Color */
+    /* 1.3 #FFF - Color */
+  /* 2.0 TEXT & FONTS */
+  /* 3.0 BOX SIZING & GRID */
+    /* 3.1 - BOX SIZING */
+    /* 3.2 - GRID DEFINITION */
+    /* 3.3 - MEDIA QUERY - 500px */
+    /* 3.4 - MEDIA QUERY - 700px */
+  /* 4.0 NAV STYLING */
+  /* 5.0 PANELS */
+/*------------------------------------------*/
+  
+/* 2.0 TEXT & FONTS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-    .wrapper {
-        max-width: 1024px;
-        margin: 0 auto;
-        font: 1.2em Helvetica, arial, sans-serif;
-    }
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+h4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+h5{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+p{
+  font-family: '', serif;
+  font-size: 16px;
+}
 
-    .wrapper > * {
-        border: 2px solid #f08c00;
-        background-color: #ffec99;
-        border-radius: 5px;
-        padding: 10px;
-    }
+/* 3.1 - BOX SIZING */
+* {
+  box-sizing: border-box; /* Keep border and padding inside the box measurement */
+}
 
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .wrapper > * {
+    border: 2px solid #2E4053;
+    background-color: #AEB6BF;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+/* 3.2 - GRID DEFINITION */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
@@ -26,6 +67,8 @@
 .wrapper > * {
   grid-column: col-start / span 12;
 }
+
+/* 3.3 - MEDIA QUERY - 500px */
 @media (min-width: 500px) {
 
   .side {
@@ -44,6 +87,8 @@
     justify-content: space-between;
   }
 }
+
+/* 3.4 - MEDIA QUERY - 700px */
 @media (min-width: 700px) {
   .main-nav {
     grid-column: col-start / span 2;
@@ -67,4 +112,17 @@
   nav ul {
     flex-direction: column;
   }
+}
+
+/* 4.0 NAV STYLING */
+nav ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
