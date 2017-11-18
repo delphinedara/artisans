@@ -1,11 +1,11 @@
 /*-----------------INDEX---------------------*/
   /* 1.0 COLOR SCHEME */
-    /* 1.1 #FFF - Color */
-    /* 1.2 #FFF - Color */
-    /* 1.3 #FFF - Color */
+    /* 1.1 #FFF - Color - for what */
+    /* 1.2 #FFF - Color - for what */
+    /* 1.3 #FFF - Color - for what */
   /* 2.0 TEXT & FONTS */
   /* 3.0 BOX SIZING & GRID */
-    /* 3.1 - BOX SIZING */
+    /* 3.1 - BOX & SIZING */
     /* 3.2 - GRID DEFINITION */
     /* 3.3 - MEDIA QUERY - 500px */
     /* 3.4 - MEDIA QUERY - 700px */
@@ -16,50 +16,50 @@
 /* 2.0 TEXT & FONTS */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-h1{
+h1, h2, h3, h4, h5{
   font-family: 'Open Sans', sans-serif;
+}
+h1{
   font-size: 24px;
 }
 h2{
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
 h3{
-  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
 h4{
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 h5{
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 p{
-  font-family: '', serif;
   font-size: 16px;
 }
 
-/* 3.1 - BOX SIZING */
+/* 3.1 - BOX & SIZING */
 * {
   box-sizing: border-box; /* Keep border and padding inside the box measurement */
 }
-
-  .wrapper {
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-
-  .wrapper > * {
-    border: 2px solid #2E4053;
-    background-color: #AEB6BF;
-    border-radius: 5px;
-    padding: 10px;
-  }
+body{
+  background-color: #A9A9A9;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.wrapper > * {
+  border: 2px solid #808080;
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  padding: 10px;
+}
 
 /* 3.2 - GRID DEFINITION */
 .wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
   grid-gap: 20px;
@@ -70,7 +70,6 @@ p{
 
 /* 3.3 - MEDIA QUERY - 500px */
 @media (min-width: 500px) {
-
   .side {
     grid-column: col-start / span 3;
     grid-row: 3;
@@ -79,7 +78,13 @@ p{
     grid-column: col-start / span 3;
     grid-row: 4;
   }
-  .content, .main-footer {
+  .bizCategory {
+    grid-column: col-start 4 / span 9;
+  }
+  .bizPanel {
+    grid-column: col-start 4 / span 2;
+  }
+  .main-footer {
     grid-column: col-start 4 / span 9;
   }
   nav ul {
@@ -94,8 +99,16 @@ p{
     grid-column: col-start / span 2;
     grid-row: 2 / 4;
   }
-  .content {
+  .btnBar {
     grid-column: col-start 3 / span 8;
+    grid-row: 2 / 4;
+  }
+  .bizCategory {
+    grid-column: col-start 3 / span 8;
+    grid-row: 2 / 4;
+  }
+  .bizPanel {
+    grid-column: col-start 3 / span 2;
     grid-row: 2 / 4;
   }
   .side {

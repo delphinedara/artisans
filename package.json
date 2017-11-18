@@ -1,0 +1,25 @@
+{
+  "name": "artisans",
+  "version": "1.0.0",
+  "description": "The capstone project for the KU Coding Bootcamp. This application will connect clients with contractors. Made with a MEAN stack and Postgres.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RockChalkBogota/artisans.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RockChalkBogota/artisans/issues"
+  },
+  "homepage": "https://github.com/RockChalkBogota/artisans#readme",
+  "dependencies": {
+    "gulp-autoprefixer": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
