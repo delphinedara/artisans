@@ -1,9 +1,10 @@
 {
   "name": "artisans",
-  "version": "1.0.0",
-  "description": "The capstone project for the KU Coding Bootcamp. This application will connect clients with contractors. Made with a MEAN stack and Postgres.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "The capstone project for the KU Coding Bootcamp. This application will connect clients with contractors. Made with the MERN stack.",
   "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
