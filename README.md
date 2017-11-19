@@ -7,16 +7,17 @@ Grid Layout system utilized for its ability to scale and flexbility with future 
 Gulp and Gulp-Autoprefixer utilized to automated the additional taging that Safari needs with Grid Layout support (added to package.json as dev dependency)
 
 
-###Mongo
+### Mongo
 ORM - Mongoose
 
-###Express
+### Express
 
-###React
+### React
 Babel package utilized for JSX (added to package.json as dev dependency)
 #### Components
 1. Navigation
 1. business panels
 1. category buttons
-###Node.js
+
+### Node.js
 

@@ -86,13 +86,26 @@
     </div>
     <!-- Temporary location of React script -->
         <script type="text/babel"> 
-            var artisan-button = React.createClass({
-                render() {
-                    return <button class="btn1 btnText" type="button">All</button>
-                }
-            })
-        ReactDOM.render(<artisan-button />,
-            document.getElementById('btnBar'))
+            const ArtisanButton = () => {
+                getInitialState() {
+                    return {clicked: false}
+                },
+                handleClick() {
+                this.setState({clicked: !this.state.clicked})
+            },
+                return <input
+                            type="button"
+                            value="All"
+                            class="btn1 btnText"
+                            onChange={this.handleClick}/>
+                <span>
+                    <button onClick={this.category}></button>
+                </span>
+            }
+
+
+            ReactDOM.render(<ArtisanButton />,
+                document.getElementById('btnBar'))
 
         </script>
     <!-- 
