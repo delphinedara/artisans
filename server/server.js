@@ -1,3 +1,15 @@
+//This file is kicked off by /bin/www.
+
+// PACKAGES //
+var express = require('express');
+var path = require('path');
+var mongoose = require('mongoose');
+
+//Development Mongoose.
+/*if*/ 
+
+
+
 //a lot of this is from an old project but there is a section within this that helps passport.js
 //function.
 
@@ -78,7 +90,7 @@
 
 // PASSPORT.JS CODE 🔑🔑 
 /*=====================================================================================*/
-var passport = require('passport')
+/*var passport = require('passport')
 var session = require('express-session')
 var env = require('dotenv').load();
 var authRoute = require('./routes/auth.js')(app, passport);
@@ -90,8 +102,8 @@ app.use(passport.initialize());
 
 app.use(passport.session()); // persistent login sessions
 
-//load passport strategies
-require('./config/passport.js')(passport, models.user);
+//load passport strategies.
+require('../server/config/passport.js')(passport, models.user);*/
 
 /*=====================================================================================*/
 // END OF PASSPORT.JS CODE 🔑🔑 
