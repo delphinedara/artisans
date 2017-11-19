@@ -7,7 +7,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 
 // IMPORT THEM ROUTES //
-var indexRoutes = require('routes/index')
+var indexRoutes = require('./routes/index');
 
 // CREATE EXPRESS APP //
 var app = express();
@@ -34,7 +34,9 @@ app.use(function (err, req, res, next) {
 var port = 8000;
 app.listen(port, function () {
     console.log('Running on localhost: ' + port);
-})
+});
+
+//module.export = app;
 
 //Development Mongoose.
 /*if*/ 
