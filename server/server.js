@@ -1,5 +1,5 @@
-a lot of this is from an old project but there is a section within this that helps passport.js
-function.
+//a lot of this is from an old project but there is a section within this that helps passport.js
+//function.
 
 
 
