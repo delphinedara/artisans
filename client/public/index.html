@@ -93,6 +93,16 @@
                 handleClick() {
                 this.setState({clicked: !this.state.clicked})
             },
+            propTypes: {
+                key: [
+                    'All',
+                    'Caterers &amp; Cooks',
+                    'Hair Stylist &amp; Sellers',
+                    'Tailors',
+                    'Housekeepers',
+                    'Electricians'
+                ]
+            }
                 return <input
                             type="button"
                             value="All"

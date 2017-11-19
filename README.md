@@ -1,5 +1,5 @@
-# artisans
-The capstone project for the KU Coding Bootcamp. This application will connect clients with contractors. Made with a MEAN stack and Postgres.
+# Artisans
+The capstone project for the KU Coding Bootcamp. This application will connect clients with contractors. Developed using the MERN stack..
 
 ## Technologies
 ### CSS
@@ -14,10 +14,9 @@ ORM - Mongoose
 
 ### React
 Babel package utilized for JSX (added to package.json as dev dependency)
-#### Components
+1. Artisan Button
+1. Artisan Panels
 1. Navigation
-1. business panels
-1. category buttons
 
 ### Node.js
 
