@@ -25,17 +25,10 @@
 <!-- Temporary React CDN -->
     <script src="https://fb.me/react-15.2.1.js"></script>
     <script src="https://fb.me/react-dom-15.2.1.js"></script>
+<!-- Temporary Babel CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
 </head>
 <body>
-    <script>
-        ReactDOM.render(
-
-            )
-    </script>
-    <!-- 
-    <artisan-button button-label=‘electricians’ button-type=‘electrician’ />
-    <artisan-panel panel-type=‘electrician’ />
-    -->
 <div class="wrapper">
         <header class="topHeader">
             <a href="" class="homeLink">Home Link</a>
@@ -91,5 +84,20 @@
             <h5>footer with copyright</h5>
         </footer>
     </div>
+    <!-- Temporary location of React script -->
+        <script type="text/babel"> 
+            var artisan-button = React.createClass({
+                render() {
+                    return <button class="btn1 btnText" type="button">All</button>
+                }
+            })
+        ReactDOM.render(<artisan-button />,
+            document.getElementById('btnBar'))
+
+        </script>
+    <!-- 
+    <artisan-button button-label=‘electricians’ button-type=‘electrician’ />
+    <artisan-panel panel-type=‘electrician’ />
+    -->
 </body>
 </html>

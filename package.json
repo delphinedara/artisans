@@ -20,6 +20,7 @@
     "gulp-autoprefixer": "^4.0.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "gulp": "^3.9.1"
   }
 }

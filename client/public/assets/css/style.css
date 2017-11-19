@@ -81,36 +81,7 @@ body{
 
 /* 3.3 - MEDIA QUERY - 500px */
 @media (min-width: 500px) {
-  .side {
-    grid-column: col-start / span 3;
-    grid-row: 3;
-  }
-  .ad {
-    grid-column: col-start / span 3;
-    grid-row: 4;
-  }
-  .btnBar {
-    grid-column: col-start 3 / span 8;
-    grid-row: 2;
-  }
-  .bizCategory {
-    grid-column: col-start 4 / span 9;
-  }
-  .bizPanel {
-    grid-column: col-start 4 / span 2;
-  }
-  .main-footer {
-    grid-column: col-start 4 / span 9;
-  }
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-}
+/* Needs to be rewrtiten after react components added */
 
 /* 3.4 - MEDIA QUERY - 700px */
 @media (min-width: 700px) {
