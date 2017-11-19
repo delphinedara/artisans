@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/RockChalkBogota/artisans#readme",
   "dependencies": {
-    "gulp-autoprefixer": "^4.0.0"
+    "express": "^4.16.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "babel-plugin-transform-react-jsx": "^6.24.1",
