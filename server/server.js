@@ -2,8 +2,39 @@
 
 // PACKAGES //
 var express = require('express');
+var fs = require('fs');
 var path = require('path');
 var mongoose = require('mongoose');
+
+// IMPORT THEM ROUTES //
+var indexRoutes = require('routes/index')
+
+// CREATE EXPRESS APP //
+var app = express();
+
+// VIEW ENGINE //
+app.set('view engine', 'html');
+app.engine('html', function (path, options, callbacks) {
+    fs.readFile(path, 'utf-8', callback);
+});
+
+// MIDDLEWARE //
+app.use(express.static(path.join(__dirname, '../client/public')));
+
+// USE THEM ROUTES //
+app.use('/', indexRoutes);
+
+
+// ERROR HANDLER //
+app.use(function (err, req, res, next) {
+    res.status(err.status || 500);
+});
+
+// SERVE APP //
+var port = 8000;
+app.listen(port, function () {
+    console.log('Running on localhost: ' + port);
+})
 
 //Development Mongoose.
 /*if*/ 
