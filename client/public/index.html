@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<!-- TITLE & FAVICON -->
+    <title>Artisans</title>
+    <link rel="icon" type="image/png" href="#">
+<!-- GENERAL META -->
+    <meta charset="UTF-8">
+    <meta name="author" content="KU Team Artisans" />
+    <meta name="description" content="" />
+    <meta name="classification" content="game" />
+    <meta name="copyright" content="&copy; 2017 Artisans" />
+<!-- For older versions of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Allow Zooming on Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+<!-- CSS RESET -->
+    <link href="assets/css/reset.css" rel="stylesheet">
+<!-- CUSTOM CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+<!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<!-- Temporary React CDN -->
+    <script src="https://fb.me/react-15.2.1.js"></script>
+    <script src="https://fb.me/react-dom-15.2.1.js"></script>
+<!-- Temporary Babel CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+</head>
+<body>
+<div class="wrapper">
+        <header class="topHeader">
+            <a href="" class="homeLink">Home Link</a>
+            <h3 class="headerTitle">Find an Artisan</h3>
+            <a href="" class="logout">Log Out</a>
+        </header>
+        <nav class="main-nav">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="">Find an Artisan</a></li>
+                <li><a href="">Review an Artisan</a></li>
+            </ul>
+        </nav>
+        <div class="btnBar">
+            <button class="btn1 btnText" type="button">All</button>
+            <button class="btn2 btnText" type="button">Caterers &amp; Cooks</button>
+            <button class="btn3 btnText" type="button">Hair Stylist &amp; Sellers</button>
+            <button class="btn4 btnText" type="button">Tailors</button>
+            <button class="btn5 btnText" type="button">Housekeepers</button>
+            <button class="btn6 btnText" type="button">Electricians</button>
+        </div><!-- /.btnBar -->
+        <div class="bizCategory">
+            <h3 class="bizCatTitle">Business Category</h3>
+            <div class="bizPanel1">
+                <h4>Business Name 1</h4>
+                <h5>Services</h5>
+                <h5>Location</h5>
+                <a>Website Link</a>
+                <h5>Rating</h5>
+            </div><!-- /.bizPanel -->
+            <div class="bizPanel2">
+                <h4>Business Name 2</h4>
+                <h5>Services</h5>
+                <h5>Location</h5>
+                <a>Website Link</a>
+                <h5>Rating</h5>
+            </div><!-- /.bizPanel -->
+            <div class="bizPanel3">
+                <h4>Business Name 3</h4>
+                <h5>Services</h5>
+                <h5>Location</h5>
+                <a>Website Link</a>
+                <h5>Rating</h5>
+            </div><!-- /.bizPanel -->
+        </div><!-- /.bizCategory -->
+        <aside class="side">
+            <h4>Help links</h4>
+        </aside>
+        <div class="ad">
+            <h4>Advertising</h4>
+        </div><!-- /.ad -->
+        <footer class="main-footer">
+            <h5>footer with copyright</h5>
+        </footer>
+    </div>
+    <!-- Temporary location of React script -->
+        <script type="text/babel"> 
+            var artisan-button = React.createClass({
+                render() {
+                    return <button class="btn1 btnText" type="button">All</button>
+                }
+            })
+        ReactDOM.render(<artisan-button />,
+            document.getElementById('btnBar'))
+
+        </script>
+    <!-- 
+    <artisan-button button-label=‘electricians’ button-type=‘electrician’ />
+    <artisan-panel panel-type=‘electrician’ />
+    -->
+</body>
+</html>
