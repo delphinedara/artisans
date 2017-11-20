@@ -145,10 +145,10 @@ body{
     grid-row: 3 / 5;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
   }
     .bizCatTitle{
-      grid-column: 1 / 8;
+      grid-column: 1 / span 6;
       grid-row: 1;
     }
     .bizPanel1 {
