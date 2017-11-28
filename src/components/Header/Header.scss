@@ -1,0 +1,33 @@
+/**
+ * Notes
+ */
+
+@import '../variables.scss';
+
+$brand-color: #03b102;
+
+.root {
+  background: #03b102;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: $max-content-width;
+}
+
+.brand {
+  color: color($brand-color lightness(+10%));
+  text-decoration: none;
+  font-size: 1.75em; /* ~28px */
+}
+
+.brandTxt {
+  margin-left: 10px;
+}
+
+.nav {
+  float: right;
+  margin-top: 6px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "BizPanel",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BizPanel.js"
+}

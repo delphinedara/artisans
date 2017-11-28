@@ -1,0 +1,33 @@
+/**
+ * Notes
+ */
+
+@import '../../components/variables.scss';
+
+.root {
+  padding-left: 0px; /* changing this causes onPageNotFound */
+  padding-right: 0px; /* changing this causes onPageNotFound */
+}
+.container {
+  margin: 0 auto;
+  padding: 0 0 40px;
+  max-width: $max-content-width;
+}
+
+.banner {
+  text-align: center;
+  background: #03b102;
+}
+.bannerTitle {
+  color: #FFF;
+  margin: 0;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1em;
+}
+.bannerDesc {
+  padding: 0;
+  color: rgba(255, 255, 255, .5);
+  font-size: 1.25em;
+  margin: 0;
+}

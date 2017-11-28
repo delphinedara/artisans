@@ -1,0 +1,6 @@
+{
+  "name": "PanelTransTrigger",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PanelTransTrigger.js"
+}
