@@ -5,6 +5,7 @@
     "npm": ">=3.3 <4"
   },
   "dependencies": {
+<<<<<<< HEAD
     "babel-polyfill": "6.6.1",
     "babel-runtime": "6.6.1",
     "bluebird": "3.3.3",
@@ -113,5 +114,15 @@
     "build": "babel-node tools/run build",
     "deploy": "babel-node tools/run deploy",
     "start": "babel-node tools/run start"
+=======
+    "express": "^4.16.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "gulp": "^3.9.1",
+    "nodemon": "^1.12.1"
+>>>>>>> f4b8f9ccf52eb02c85fd6cb696d871ad1200ec03
   }
 }

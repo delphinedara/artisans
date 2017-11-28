@@ -31,12 +31,12 @@ app.use(function (err, req, res, next) {
 });
 
 // SERVE APP //
-var port = 8000;
+var port = process.env.PORT || 8080;
 app.listen(port, function () {
     console.log('Running on localhost: ' + port);
 });
 
-//module.export = app;
+//module.export = app; < Something something, this.
 
 //Development Mongoose.
 /*if*/ 
